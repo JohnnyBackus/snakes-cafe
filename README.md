@@ -6,6 +6,9 @@
 
 ### Links and Resources
 
+- [CodeFellows Python Lab Instructions](https://codefellows.github.io/code-401-python-guide/reference/submission-instructions/labs/)
+- [CodeFellows README template](https://codefellows.github.io/code-401-python-guide/reference/submission-instructions/labs/README-template.html)
+
 ### Setup
 
 - not applicable
