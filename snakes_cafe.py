@@ -35,8 +35,19 @@ Unicorn Tears
 ** What would you like to order? **
 ***********************************""")
 
-user_order = input("give me your order:")
+total_order = []
 
-print("> ", user_order)
+def order():
+    user_order = input("> ")
+    while user_order.lower() != 'quit' and user_order.lower() != 'done':
+        total_order.append(user_order)
+        print("Ok! I have added one order of", user_order, "to your meal. Your order now includes ", total_order, ". Would you like to add anything else to your order? Enter 'done' any time to complete your order or 'quit' to exit and cancel your order.")
+        user_order = input("> ")
 
-# if user_order == "quit":
+    if user_order.lower() == 'quit':
+        print("Thank you for visiting Snakes Cafe. Have a great day!")
+    elif user_order.lower() == 'done':
+        order_string = ', '.join(total_order)
+        print("Thank you for visiting Snakes Cafe. Your final order is:", order_string, ". Have a great day!") 
+
+order()
